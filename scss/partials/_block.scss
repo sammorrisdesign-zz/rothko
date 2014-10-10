@@ -1,12 +1,19 @@
 .block {
     position: absolute;
+    border: 30px solid $c-base;
+    cursor: pointer;
     -webkit-filter: blur(20px);
+    @include transition(all 2s);
+
+    &:hover {
+        margin-top: -5%;
+    }
 }
 
 @for $i from 1 through $block-variants {
     .block--size-#{$i} {
-        width: random(40) * 100px;
-        height: random(20) * 100px;
+        width: percentage(random(80)/100) + 10%;
+        height: percentage(random(80)/100) + 10%;
     }
 }
 
@@ -18,7 +25,7 @@
 
 @for $i from 1 through $block-variants {
     .block--position-#{$i} {
-        top: percentage(random(100)/100);
-        left: percentage(random(20)/20);
+        top: percentage(random(50)/100);
+        left: percentage(random(50)/100);
     }
 }

@@ -12,6 +12,10 @@ body {
     overflow: hidden;
 }
 
+body {
+    background-color: $c-base;
+}
+
 a {
     text-decoration: none;
 
