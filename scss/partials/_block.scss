@@ -1,0 +1,24 @@
+.block {
+    position: absolute;
+    -webkit-filter: blur(20px);
+}
+
+@for $i from 1 through $block-variants {
+    .block--size-#{$i} {
+        width: random(40) * 100px;
+        height: random(20) * 100px;
+    }
+}
+
+@for $i from 1 through $block-variants {
+    .block--color-#{$i} {
+        background-color: rgb(random(256)-1, random(256)-1, random(256)-1);
+    }
+}
+
+@for $i from 1 through $block-variants {
+    .block--position-#{$i} {
+        top: percentage(random(100)/100);
+        left: percentage(random(20)/20);
+    }
+}
