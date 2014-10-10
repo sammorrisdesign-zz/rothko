@@ -35,6 +35,17 @@ module.exports = function(grunt) {
       options: {
         config: 'scss/.scss-lint.yml'
       }
+    },
+    browserSync: {
+      bsFiles: {
+        src : 'style.css'
+      },
+      options: {
+        watchTask: true,
+        server: {
+          baseDir: "./"
+        }
+      }
     }
   });
 
@@ -42,7 +53,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-scss-lint');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   // Default task.
-  grunt.registerTask('default', ['sass', 'scsslint', 'watch']);
+  grunt.registerTask('default', ['sass', 'scsslint', 'browserSync', 'watch']);
 };

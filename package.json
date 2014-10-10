@@ -1,5 +1,5 @@
 {
-  "name": "Mies",
+  "name": "Rothko",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,8 @@
   },
   "homepage": "https://github.com/sammorrisdesign/mies-boilerplate",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^1.5.3"
   },
   "dependencies": {
     "bower-installer": "^0.8.4",
