@@ -14,3 +14,5 @@ window.setInterval(function() {
 window.setInterval(function() {
     $("body").attr("class", "body--color-" + (Math.floor(Math.random() * 30) + 1));
 }, 5000);
+
+Modernizr.load();
