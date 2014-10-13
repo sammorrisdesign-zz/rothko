@@ -24,13 +24,13 @@
 }
 
 @for $i from 1 through $block-variants {
-    .block--position-#{$i} {
-        order: $i;
+    .block--color-#{$i} {
+        background-color: map-get($c-rothko, $i);
     }
 }
 
 @for $i from 1 through $block-variants {
-    .block--color-#{$i} {
-        background-color: map-get($c-rothko, $i);
+    .block--spacing-#{$i} {
+        margin: #{$i}px 30px;
     }
 }
