@@ -10,11 +10,13 @@
     margin: 30px;
     cursor: pointer;
     -webkit-filter: blur(15px);
+    filter: blur(15px);
     @include transition(all 2s);
 
     &:hover {
         margin-top: -5%;
         -webkit-filter: blur(10px);
+        filter: blur(15px);
     }
 }
 
