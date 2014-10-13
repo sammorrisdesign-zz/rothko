@@ -12,8 +12,10 @@ body {
     overflow: hidden;
 }
 
-body {
-    background-color: $c-base;
+@for $i from 1 through $block-variants {
+    .body--color-#{$i} {
+        background-color: map-get($c-rothko, $i);
+    }
 }
 
 a {

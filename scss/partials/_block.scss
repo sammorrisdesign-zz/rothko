@@ -1,10 +1,14 @@
+.blocks {
+    @include flex-display();
+    @include flex-direction(column);
+    margin: 0 10%;
+    height: 100vh;
+}
+
 .block {
-    position: absolute;
-    left: 10%;
-    border: 30px solid $c-base;
-    width: 80%;
+    margin: 30px;
     cursor: pointer;
-    -webkit-filter: blur(20px);
+    -webkit-filter: blur(15px);
     @include transition(all 2s);
 
     &:hover {
@@ -15,18 +19,18 @@
 
 @for $i from 1 through $block-variants {
     .block--size-#{$i} {
-        height: percentage(random(80)/100) + 10%;
-    }
-}
-
-@for $i from 1 through $block-variants {
-    .block--color-#{$i} {
-        background-color: rgb(random(256)-1, random(256)-1, random(256)-1);
+        @include flex-grow($i);
     }
 }
 
 @for $i from 1 through $block-variants {
     .block--position-#{$i} {
-        top: percentage(random(80)/100);
+        order: $i;
+    }
+}
+
+@for $i from 1 through $block-variants {
+    .block--color-#{$i} {
+        background-color: map-get($c-rothko, $i);
     }
 }
