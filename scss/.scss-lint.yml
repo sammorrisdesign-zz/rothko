@@ -11,7 +11,7 @@ linters:
     width: 4
 
   PropertySortOrder:
-    order: concentric
+    enabled: false
 
   SelectorDepth:
     enabled: true
