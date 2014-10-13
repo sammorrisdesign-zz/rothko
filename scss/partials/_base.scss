@@ -12,6 +12,10 @@ body {
     overflow: hidden;
 }
 
+body {
+    @include transition(background-color 5s);
+}
+
 @for $i from 1 through $block-variants {
     .body--color-#{$i} {
         background-color: map-get($c-rothko, $i);

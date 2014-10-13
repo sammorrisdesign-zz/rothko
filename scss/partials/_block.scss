@@ -1,6 +1,7 @@
 .blocks {
     @include flex-display();
     @include flex-direction(column);
+    @include transition(transform 2s);
     margin: 0 10%;
     height: 100vh;
 }
