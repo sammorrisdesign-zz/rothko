@@ -34,6 +34,6 @@
 
 @for $i from 1 through $block-variants {
     .block--spacing-#{$i} {
-        margin: #{$i}px 30px;
+        margin: ($i * .5px) 30px;
     }
 }
