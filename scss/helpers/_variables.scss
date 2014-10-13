@@ -4,4 +4,51 @@ $c-white: #fff;
 $c-black: #333;
 $c-base: rgb(random(256)-1, random(256)-1, random(256)-1);
 
+$c-rothko: (
+    // No.8
+    1: #dca10f,
+    2: #f1f1f1,
+    3: #ed5a0b,
+    // No.5
+    4: #ff661c,
+    5: #ed000f,
+    6: #f8a125,
+    // No.61 (Rust and Blue)
+    7: #3759b3,
+    8: #49151f,
+    9: #3c3b63,
+    // No.13 (Magenta, Black, Green on Orange)
+    10: #fbffab,
+    11: #608b46,
+    12: #20110a,
+    // Black on Maroon
+    13: #523f45,
+    14: #282830,
+    // Orange Red Orange
+    15: #935a2d,
+    16: #fb752f,
+    17: #852816,
+    // Untitled (1956)
+    18: #f0ac01,
+    // White Center
+    19: #fdf8e1,
+    20: #f95a98,
+    // Black in Deep Red
+    21: #8c0a1e,
+    // Blue and Gray
+    22: #3f3942,
+    // Red, Orange, Tan and Purple
+    23: #f38700,
+    24: #421f4c,
+    // Blue Divided by Blue
+    25: #398aba,
+    // Blue Orange Red
+    26: #123482,
+    27: #ee1c19,
+    28: #e3561d,
+    // Yellow Band
+    29: #e0603e,
+    30: #f9c139
+);
+
 $block-variants: 30;
