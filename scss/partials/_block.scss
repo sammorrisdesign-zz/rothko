@@ -2,8 +2,10 @@
     @include flex-display();
     @include flex-direction(column);
     @include transition(transform 2s);
-    margin: 0 10%;
+    padding: 0 10%;
+    margin: 0 auto;
     height: 100vh;
+    max-width: 1000px;
 }
 
 .block {
