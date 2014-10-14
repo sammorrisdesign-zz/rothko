@@ -5,7 +5,10 @@
     padding: 0 10%;
     margin: 0 auto;
     height: 100vh;
-    max-width: 1000px;
+
+    @include mq(1000px) {
+        padding: 0 20%;
+    }
 }
 
 .block {
