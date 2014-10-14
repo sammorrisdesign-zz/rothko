@@ -12,7 +12,17 @@ window.setInterval(function() {
 }, 5000);
 
 window.setInterval(function() {
-    $("body").attr("class", "body--color-" + (Math.floor(Math.random() * 30) + 1));
+    $("body").attr("class", function(i, c){
+        return c.replace(/(^|\s)body--color-\S+/g, "body--color-" + (Math.floor(Math.random() * 30) + 1));
+    });
 }, 8000);
+
+$(".about-link--open").click(function() {
+    $("body").addClass("body--about");
+});
+
+$(".about-link--close").click(function() {
+    $("body").removeClass("body--about");
+});
 
 Modernizr.load();

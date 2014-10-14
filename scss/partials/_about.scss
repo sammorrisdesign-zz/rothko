@@ -77,3 +77,14 @@
         }
     }
 }
+
+.body--about {
+    .about {
+        display: block;
+    }
+
+    .blocks,
+    .about-link--open {
+        display: none;
+    }
+}
