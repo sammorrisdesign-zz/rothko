@@ -1,7 +1,7 @@
 Rothko
 ================
 
-The CSS Filters experiment that Mark Rothko could only dream of. This normally lives at [rothko.me](www.rothko.me).
+The CSS Filters experiment that Mark Rothko could only dream of. This normally lives at [rothko.me](http://www.rothko.me).
 
 ## Usage
 
