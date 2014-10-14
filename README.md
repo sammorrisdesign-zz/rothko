@@ -1,7 +1,7 @@
 Rothko
 ================
 
-The Sass experiment Mark Rothko could only dream of
+The CSS Filters experiment that Mark Rothko could only dream of. This normally lives at [rothko.me](www.rothko.me).
 
 ## Usage
 
