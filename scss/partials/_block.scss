@@ -7,7 +7,6 @@
 }
 
 .block {
-    margin: 30px;
     cursor: pointer;
     -webkit-filter: blur(15px);
     filter: blur(15px);
@@ -34,6 +33,6 @@
 
 @for $i from 1 through $block-variants {
     .block--spacing-#{$i} {
-        margin: ($i * .5px) 30px;
+        margin: ($i * .5px) 0;
     }
 }
